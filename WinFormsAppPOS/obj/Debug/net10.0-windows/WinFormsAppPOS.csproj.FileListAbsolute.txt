@@ -16,3 +16,22 @@ C:\Users\WebUser\source\repos\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-wi
 C:\Users\WebUser\source\repos\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmMain.resources
 C:\Users\WebUser\source\repos\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.Properties.Resources.resources
 C:\Users\WebUser\source\repos\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmProduct.resources
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\bin\Debug\net10.0-windows\WinFormsAppPOS.exe
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\bin\Debug\net10.0-windows\WinFormsAppPOS.deps.json
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\bin\Debug\net10.0-windows\WinFormsAppPOS.runtimeconfig.json
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\bin\Debug\net10.0-windows\WinFormsAppPOS.dll
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\bin\Debug\net10.0-windows\WinFormsAppPOS.pdb
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmMain.resources
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmProduct.resources
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.Properties.Resources.resources
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.csproj.GenerateResource.cache
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.AssemblyInfoInputs.cache
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.AssemblyInfo.cs
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.csproj.CoreCompileInputs.cache
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.sourcelink.json
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.dll
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\refint\WinFormsAppPOS.dll
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.pdb
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.genruntimeconfig.cache
+C:\Users\TCLASS_Rod\Desktop\POS REPO\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\ref\WinFormsAppPOS.dll

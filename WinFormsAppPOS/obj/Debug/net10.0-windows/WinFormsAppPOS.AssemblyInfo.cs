@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsAppPOS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bda42304575fc847d1f0512872a89b77e8a7bc5")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinFormsAppPOS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinFormsAppPOS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

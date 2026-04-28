@@ -15,8 +15,8 @@ namespace WinFormsAppPOS
 
         private void btnTransaction_Click(object sender, EventArgs e)
         {
-            pnlSales.Visible = true;
             pnlMaintenance.Visible = false;
+            pnlSales.Visible = true;
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
