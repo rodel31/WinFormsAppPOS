@@ -32,7 +32,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            btnNew = new Button();
+            btnAdd = new Button();
             btnEdit = new Button();
             btnDelete = new Button();
             btnClear = new Button();
@@ -84,16 +84,16 @@
             label4.TabIndex = 3;
             label4.Text = "Category :";
             // 
-            // btnNew
+            // btnAdd
             // 
-            btnNew.Location = new Point(86, 212);
-            btnNew.Margin = new Padding(3, 4, 3, 4);
-            btnNew.Name = "btnNew";
-            btnNew.Size = new Size(86, 31);
-            btnNew.TabIndex = 4;
-            btnNew.Text = "NEW";
-            btnNew.UseVisualStyleBackColor = true;
-            btnNew.Click += btnNew_Click;
+            btnAdd.Location = new Point(86, 212);
+            btnAdd.Margin = new Padding(3, 4, 3, 4);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(86, 31);
+            btnAdd.TabIndex = 4;
+            btnAdd.Text = "ADD";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnEdit
             // 
@@ -115,6 +115,7 @@
             btnDelete.TabIndex = 6;
             btnDelete.Text = "DELETE";
             btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // btnClear
             // 
@@ -140,6 +141,7 @@
             dgvProducts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvProducts.Size = new Size(461, 289);
             dgvProducts.TabIndex = 8;
+            dgvProducts.CellContentClick += dgvProducts_CellContentClick;
             // 
             // id
             // 
@@ -208,7 +210,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSeaGreen;
-            ClientSize = new Size(553, 555);
+            ClientSize = new Size(563, 555);
             Controls.Add(cmbCategory);
             Controls.Add(dgvProducts);
             Controls.Add(txtPrice);
@@ -217,7 +219,7 @@
             Controls.Add(btnClear);
             Controls.Add(btnDelete);
             Controls.Add(btnEdit);
-            Controls.Add(btnNew);
+            Controls.Add(btnAdd);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -225,6 +227,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "frmProduct";
             Text = "Product Maintenance";
+            Load += frmProduct_Load;
             ((System.ComponentModel.ISupportInitialize)dgvProducts).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -236,7 +239,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Button btnNew;
+        private Button btnAdd;
         private Button btnEdit;
         private Button btnDelete;
         private Button btnClear;

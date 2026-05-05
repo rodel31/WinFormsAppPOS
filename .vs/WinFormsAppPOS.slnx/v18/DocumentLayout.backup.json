@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\winformsapppos\\winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\winformsapppos\\winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
-              "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
-              "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
-              "RelativeToolTip": "WinFormsAppPOS\\Product.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAawEkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T02:30:57.55Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -54,25 +41,38 @@
               "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs [Design]",
               "RelativeToolTip": "WinFormsAppPOS\\Product.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T02:12:23.623Z",
+              "WhenOpened": "2026-04-30T00:44:30.927Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
+              "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
+              "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
+              "RelativeToolTip": "WinFormsAppPOS\\Product.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAowIsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T02:30:57.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Form1.cs",
               "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Form1.cs",
               "RelativeToolTip": "WinFormsAppPOS\\Form1.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-28T01:59:17.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\WinFormsAppPOS\\WinFormsAppPOS\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Form1.cs",

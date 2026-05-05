@@ -11,12 +11,18 @@ namespace WinFormsAppPOS
 {
     public partial class frmProduct : Form
     {
+
         public frmProduct()
         {
             InitializeComponent();
             Reset();
         }
-
+        int idNum = 0;
+        public int getProductId(int _id)
+        {
+            idNum = idNum + 1;
+            return idNum;
+        }
         public void Reset()
         {
             txtProductId.Enabled = false;
@@ -34,27 +40,29 @@ namespace WinFormsAppPOS
         }
         public void InputEnable()
         {
-            txtProductId.Enabled = true;
+            txtProductId.Enabled = false;
             txtProductName.Enabled = true;
             txtPrice.Enabled = true;
             cmbCategory.Enabled = true;
             cmbCategory.SelectedIndex = 0;
         }
-        private void btnNew_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (btnNew.Text == "NEW")
+            if (btnAdd.Text == "ADD")
             {
-                btnNew.Text = "ADD";
+                idNum = getProductId(idNum);
+                txtProductId.Text = "00" + idNum;
+                btnAdd.Text = "SAVE";
                 InputEnable();
             }
-            else if (btnNew.Text == "ADD")
+            else if (btnAdd.Text == "SAVE")
             {
                 string id = txtProductId.Text;
                 string name = txtProductName.Text;
                 string price = txtPrice.Text;
                 string category = cmbCategory.Text;
                 dgvProducts.Rows.Add(id, name, price, category);
-                btnNew.Text = "NEW";
+                btnAdd.Text = "ADD";
                 Clear();
                 Reset();
             }
@@ -66,7 +74,7 @@ namespace WinFormsAppPOS
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if(btnEdit.Text == "EDIT")
+            if (btnEdit.Text == "EDIT")
             {
                 if (dgvProducts.SelectedRows.Count > 0)
                 {
@@ -82,9 +90,9 @@ namespace WinFormsAppPOS
                     MessageBox.Show("Please select data on the list.");
                 }
             }
-            else if(btnEdit.Text == "UPDATE")
+            else if (btnEdit.Text == "UPDATE")
             {
-                for (int i = 0; i<dgvProducts.Rows.Count-1; i++)
+                for (int i = 0; i < dgvProducts.Rows.Count - 1; i++)
                 {
                     if (dgvProducts.Rows[i].Cells["ID"].Value.ToString() == txtProductId.Text)
                     {
@@ -92,13 +100,50 @@ namespace WinFormsAppPOS
                         dgvProducts.Rows[i].Cells["NAME"].Value = txtProductName.Text;
                         dgvProducts.Rows[i].Cells["PRICE"].Value = txtPrice.Text;
                         dgvProducts.Rows[i].Cells["CATEGORY"].Value = cmbCategory.Text;
-                        
+
                         MessageBox.Show("SUCCESSFULLY UPDATED");
                     }
                 }
                 btnEdit.Text = "EDIT";
                 Clear();
                 Reset();
+            }
+        }
+
+        private void frmProduct_Load(object sender, EventArgs e)
+        {
+            dgvProducts.Rows.Add(001, "Coke", 25, "Drinks");
+            dgvProducts.Rows.Add(002, "Sprite", 25, "Drinks");
+            dgvProducts.Rows.Add(003, "Royal", 25, "Drinks");
+            dgvProducts.Rows.Add(004, "RC", 25, "Drinks");
+            dgvProducts.Rows.Add(005, "C2", 25, "Drinks");
+            dgvProducts.Rows.Add(006, "Coke", 25, "Drinks");
+            idNum = 6;
+        }
+
+        private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvProducts.SelectedRows.Count == 0)
+            {
+               MessageBox.Show("Please select row to delete","No selection",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+                
+            }
+            DialogResult confirm = MessageBox.Show("Are you sure you want to delete the selected row(s)?","Confirm Delete",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (confirm == DialogResult.Yes)
+            {
+                foreach (DataGridViewRow row in dgvProducts.SelectedRows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        dgvProducts.Rows.Remove(row);
+                        MessageBox.Show("Selected row(s) deleted successfully.","Success",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+                }
             }
         }
     }
