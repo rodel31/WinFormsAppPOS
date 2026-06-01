@@ -56,38 +56,34 @@
             pnlMenu.Controls.Add(btnReports);
             pnlMenu.Controls.Add(btnTransaction);
             pnlMenu.Controls.Add(btnMaintenance);
-            pnlMenu.Location = new Point(0, 115);
-            pnlMenu.Margin = new Padding(3, 4, 3, 4);
+            pnlMenu.Location = new Point(0, 86);
             pnlMenu.Name = "pnlMenu";
-            pnlMenu.Size = new Size(138, 487);
+            pnlMenu.Size = new Size(121, 365);
             pnlMenu.TabIndex = 0;
             // 
             // btnSettings
             // 
-            btnSettings.Location = new Point(7, 399);
-            btnSettings.Margin = new Padding(3, 4, 3, 4);
+            btnSettings.Location = new Point(6, 299);
             btnSettings.Name = "btnSettings";
-            btnSettings.Size = new Size(113, 48);
+            btnSettings.Size = new Size(99, 36);
             btnSettings.TabIndex = 3;
             btnSettings.Text = "Settings";
             btnSettings.UseVisualStyleBackColor = true;
             // 
             // btnReports
             // 
-            btnReports.Location = new Point(7, 141);
-            btnReports.Margin = new Padding(3, 4, 3, 4);
+            btnReports.Location = new Point(6, 106);
             btnReports.Name = "btnReports";
-            btnReports.Size = new Size(113, 48);
+            btnReports.Size = new Size(99, 36);
             btnReports.TabIndex = 2;
             btnReports.Text = "Reports";
             btnReports.UseVisualStyleBackColor = true;
             // 
             // btnTransaction
             // 
-            btnTransaction.Location = new Point(7, 85);
-            btnTransaction.Margin = new Padding(3, 4, 3, 4);
+            btnTransaction.Location = new Point(6, 64);
             btnTransaction.Name = "btnTransaction";
-            btnTransaction.Size = new Size(113, 48);
+            btnTransaction.Size = new Size(99, 36);
             btnTransaction.TabIndex = 1;
             btnTransaction.Text = "Transaction";
             btnTransaction.UseVisualStyleBackColor = true;
@@ -95,10 +91,9 @@
             // 
             // btnMaintenance
             // 
-            btnMaintenance.Location = new Point(7, 29);
-            btnMaintenance.Margin = new Padding(3, 4, 3, 4);
+            btnMaintenance.Location = new Point(6, 22);
             btnMaintenance.Name = "btnMaintenance";
-            btnMaintenance.Size = new Size(113, 48);
+            btnMaintenance.Size = new Size(99, 36);
             btnMaintenance.TabIndex = 0;
             btnMaintenance.Text = "Maintenance";
             btnMaintenance.UseVisualStyleBackColor = true;
@@ -111,7 +106,7 @@
             pictureBox1.Location = new Point(0, 1);
             pictureBox1.Margin = new Padding(0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(138, 129);
+            pictureBox1.Size = new Size(121, 97);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
@@ -123,20 +118,18 @@
             pnlMaintenance.Controls.Add(btnCustomer);
             pnlMaintenance.Controls.Add(btnCategory);
             pnlMaintenance.Controls.Add(btnProducts);
-            pnlMaintenance.Location = new Point(153, 73);
-            pnlMaintenance.Margin = new Padding(3, 4, 3, 4);
+            pnlMaintenance.Location = new Point(134, 55);
             pnlMaintenance.Name = "pnlMaintenance";
-            pnlMaintenance.Size = new Size(752, 457);
+            pnlMaintenance.Size = new Size(658, 343);
             pnlMaintenance.TabIndex = 3;
             pnlMaintenance.Visible = false;
             // 
             // btnUser
             // 
             btnUser.BackColor = Color.PaleTurquoise;
-            btnUser.Location = new Point(403, 274);
-            btnUser.Margin = new Padding(3, 4, 3, 4);
+            btnUser.Location = new Point(353, 206);
             btnUser.Name = "btnUser";
-            btnUser.Size = new Size(186, 109);
+            btnUser.Size = new Size(163, 82);
             btnUser.TabIndex = 3;
             btnUser.Text = "USER";
             btnUser.UseVisualStyleBackColor = false;
@@ -144,10 +137,9 @@
             // btnCustomer
             // 
             btnCustomer.BackColor = Color.PaleTurquoise;
-            btnCustomer.Location = new Point(174, 274);
-            btnCustomer.Margin = new Padding(3, 4, 3, 4);
+            btnCustomer.Location = new Point(152, 206);
             btnCustomer.Name = "btnCustomer";
-            btnCustomer.Size = new Size(186, 109);
+            btnCustomer.Size = new Size(163, 82);
             btnCustomer.TabIndex = 2;
             btnCustomer.Text = "CUSTOMER";
             btnCustomer.UseVisualStyleBackColor = false;
@@ -155,10 +147,9 @@
             // btnCategory
             // 
             btnCategory.BackColor = Color.PaleTurquoise;
-            btnCategory.Location = new Point(403, 100);
-            btnCategory.Margin = new Padding(3, 4, 3, 4);
+            btnCategory.Location = new Point(353, 75);
             btnCategory.Name = "btnCategory";
-            btnCategory.Size = new Size(186, 109);
+            btnCategory.Size = new Size(163, 82);
             btnCategory.TabIndex = 1;
             btnCategory.Text = "CATEGORY";
             btnCategory.UseVisualStyleBackColor = false;
@@ -166,10 +157,9 @@
             // btnProducts
             // 
             btnProducts.BackColor = Color.PaleTurquoise;
-            btnProducts.Location = new Point(174, 98);
-            btnProducts.Margin = new Padding(3, 4, 3, 4);
+            btnProducts.Location = new Point(152, 74);
             btnProducts.Name = "btnProducts";
-            btnProducts.Size = new Size(186, 109);
+            btnProducts.Size = new Size(163, 82);
             btnProducts.TabIndex = 0;
             btnProducts.Text = "PRODUCTS";
             btnProducts.UseVisualStyleBackColor = false;
@@ -179,20 +169,18 @@
             // 
             pnlSales.BackColor = Color.Transparent;
             pnlSales.Controls.Add(btnSales);
-            pnlSales.Location = new Point(144, 90);
-            pnlSales.Margin = new Padding(3, 4, 3, 4);
+            pnlSales.Location = new Point(126, 68);
             pnlSales.Name = "pnlSales";
-            pnlSales.Size = new Size(768, 404);
+            pnlSales.Size = new Size(672, 303);
             pnlSales.TabIndex = 4;
             pnlSales.Visible = false;
             // 
             // btnSales
             // 
             btnSales.BackColor = Color.PaleTurquoise;
-            btnSales.Location = new Point(251, 115);
-            btnSales.Margin = new Padding(3, 4, 3, 4);
+            btnSales.Location = new Point(220, 86);
             btnSales.Name = "btnSales";
-            btnSales.Size = new Size(186, 109);
+            btnSales.Size = new Size(163, 82);
             btnSales.TabIndex = 0;
             btnSales.Text = "SALES";
             btnSales.UseVisualStyleBackColor = false;
@@ -203,19 +191,19 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Perpetua", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(261, 18);
+            label1.Location = new Point(228, 14);
             label1.Name = "label1";
-            label1.Size = new Size(498, 39);
+            label1.Size = new Size(395, 31);
             label1.TabIndex = 5;
             label1.Text = "POINT OF SALES MAINTENANCE";
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(917, 600);
+            ClientSize = new Size(802, 450);
             Controls.Add(pnlSales);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
@@ -223,10 +211,10 @@
             Controls.Add(pnlMaintenance);
             DoubleBuffered = true;
             ForeColor = SystemColors.ActiveCaptionText;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "POS Main";
             TransparencyKey = Color.Gray;
             pnlMenu.ResumeLayout(false);
