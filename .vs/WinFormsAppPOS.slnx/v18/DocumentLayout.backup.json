@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\",
+  "WorkspaceRootPath": "E:\\POS\\WinFormsAppPOS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\webuser\\desktop\\repo\\winformsapppos\\winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|e:\\pos\\winformsapppos\\winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|e:\\pos\\winformsapppos\\winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|e:\\pos\\winformsapppos\\winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|E:\\POS\\WinFormsAppPOS\\winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\webuser\\desktop\\repo\\winformsapppos\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|e:\\pos\\winformsapppos\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|E:\\POS\\WinFormsAppPOS\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
+              "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
+              "RelativeToolTip": "WinFormsAppPOS\\Product.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:35:46.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs [Design]",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
+              "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs [Design]",
+              "RelativeToolTip": "WinFormsAppPOS\\Product.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:21:33.471Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cs",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
+              "RelativeDocumentMoniker": "WinFormsAppPOS\\Register.cs",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
+              "RelativeToolTip": "WinFormsAppPOS\\Register.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwFwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T03:21:06.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
+              "RelativeDocumentMoniker": "WinFormsAppPOS\\Login.cs",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
+              "RelativeToolTip": "WinFormsAppPOS\\Login.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowEQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T02:51:10.626Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -50,24 +109,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
-              "RelativeDocumentMoniker": "WinFormsAppPOS\\Register.cs",
-              "ToolTip": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
-              "RelativeToolTip": "WinFormsAppPOS\\Register.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADwvxEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T07:01:33.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Register.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Register.cs",
-              "ToolTip": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs [Design]",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Register.cs [Design]",
               "RelativeToolTip": "WinFormsAppPOS\\Register.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T06:46:55.531Z",
@@ -75,24 +121,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
-              "RelativeDocumentMoniker": "WinFormsAppPOS\\Login.cs",
-              "ToolTip": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
-              "RelativeToolTip": "WinFormsAppPOS\\Login.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowEQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T02:51:10.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
+              "DocumentMoniker": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Login.cs",
-              "ToolTip": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs [Design]",
+              "ToolTip": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs [Design]",
               "RelativeToolTip": "WinFormsAppPOS\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T02:28:39.748Z",

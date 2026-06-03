@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj": {}
+    "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj": {
+    "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
+        "projectUniqueName": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
         "projectName": "WinFormsAppPOS",
-        "projectPath": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
-        "packagesPath": "C:\\Users\\WebUser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WebUser\\Desktop\\Repo\\WinFormsAppPOS\\WinFormsAppPOS\\obj\\",
+        "projectPath": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\WebUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +52,14 @@
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "dependencies": {
+            "BarCode": {
+              "target": "Package",
+              "version": "[2026.6.2, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[9.7.0, )"

@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             txtUsername = new TextBox();
-            txtUserId = new TextBox();
             txtFullname = new TextBox();
             btnCancel = new Button();
             btnRegister = new Button();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
             txtPassword = new TextBox();
             txtConfirm = new TextBox();
             label5 = new Label();
@@ -50,13 +48,6 @@
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(174, 23);
             txtUsername.TabIndex = 24;
-            // 
-            // txtUserId
-            // 
-            txtUserId.Location = new Point(117, 11);
-            txtUserId.Name = "txtUserId";
-            txtUserId.Size = new Size(174, 23);
-            txtUserId.TabIndex = 22;
             // 
             // txtFullname
             // 
@@ -112,15 +103,6 @@
             label2.TabIndex = 14;
             label2.Text = "Fullname:";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(8, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 15);
-            label1.TabIndex = 13;
-            label1.Text = "User id :";
-            // 
             // txtPassword
             // 
             txtPassword.Location = new Point(117, 158);
@@ -174,14 +156,12 @@
             Controls.Add(label5);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
-            Controls.Add(txtUserId);
             Controls.Add(txtFullname);
             Controls.Add(btnCancel);
             Controls.Add(btnRegister);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(label1);
             Name = "frmRegister";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Register";
@@ -192,14 +172,12 @@
 
         #endregion
         private TextBox txtUsername;
-        private TextBox txtUserId;
         private TextBox txtFullname;
         private Button btnCancel;
         private Button btnRegister;
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label label1;
         private TextBox txtPassword;
         private TextBox txtConfirm;
         private Label label5;

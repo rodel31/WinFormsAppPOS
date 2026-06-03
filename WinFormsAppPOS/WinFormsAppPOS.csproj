@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BarCode" Version="2026.6.2" />
+    <PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.4" />
     <PackageReference Include="MySql.Data" Version="9.7.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
   </ItemGroup>
