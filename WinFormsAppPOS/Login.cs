@@ -15,6 +15,8 @@ namespace WinFormsAppPOS
         public frmLogin()
         {
             InitializeComponent();
+            txtUsername.Text = "admin";
+            txtPassword.Text = "admin123";
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

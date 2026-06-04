@@ -28,14 +28,18 @@ namespace WinFormsAppPOS
             txtProductId.Enabled = false;
             txtProductName.Enabled = false;
             txtPrice.Enabled = false;
+            txtStockQuantity.Enabled = false;
+            rtbDesc.Enabled = false;
             cmbCategory.Enabled = false;
             cmbCategory.SelectedIndex = 0;
         }
         public void Clear()
         {
-            //txtProductId.Text = string.Empty;
+            txtProductId.Text = string.Empty;
             txtProductName.Text = string.Empty;
             txtPrice.Text = string.Empty;
+            txtStockQuantity.Text = string.Empty;
+            rtbDesc.Text = string.Empty;
             cmbCategory.SelectedIndex = 0;
         }
         public void InputEnable()
@@ -43,6 +47,8 @@ namespace WinFormsAppPOS
             txtProductId.Enabled = false;
             txtProductName.Enabled = true;
             txtPrice.Enabled = true;
+            txtStockQuantity.Enabled = true;
+            rtbDesc.Enabled = true;
             cmbCategory.Enabled = true;
             cmbCategory.SelectedIndex = 0;
         }
@@ -69,52 +75,76 @@ namespace WinFormsAppPOS
             }
             return rowCount;
         }
+        private void LoadData()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query = "SELECT * FROM products";
+
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn);
+
+                    DataTable dt = new DataTable();
+
+                    adapter.Fill(dt);
+                    dt.Columns.Add("FormattedID", typeof(string));
+
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        row["FormattedID"] =
+                            "Prod-2026-" + Convert.ToInt32(row["ProductID"]).ToString("D4");
+                    }
+
+                    dgvProducts.DataSource = dt;
+
+                    // Hide original ID column
+                    dgvProducts.Columns["ProductID"].Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (btnAdd.Text == "ADD")
             {
                 idNum = GetTableRowCount() +1;
-                txtProductId.Text = txtProductId.Text = "2026-000" + idNum.ToString();
+                txtProductId.Text = txtProductId.Text = "Prod-2026-" + idNum.ToString("D4");
                 btnAdd.Text = "SAVE";
                 InputEnable();
             }
             else if (btnAdd.Text == "SAVE")
             {
-                string id = txtProductId.Text;
-                string name = txtProductName.Text;
-                string price = txtPrice.Text;
-                string category = cmbCategory.Text;
                 using(MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     try
                     {
                         conn.Open();
-                        string sqlQuery = "INSERT INTO products(@ProductName,@Description,@Category,@UnitPrice,@StockQuantity,@Barcode)";
+                        string sqlQuery = "INSERT INTO products(ProductName,Description,Category,UnitPrice,StockQuantity)" +
+                            "VALUES(@ProductName,@Description,@Category,@UnitPrice,@StockQuantity)";
                         using (MySqlCommand cmd = new MySqlCommand(sqlQuery, conn))
                         {
-                            cmd.Parameters.AddWithValue("@ProductName", txtProductName.Text.ToString());
-                            cmd.Parameters.AddWithValue("@Description", rtbDesc.Text.ToString());
-                            cmd.Parameters.AddWithValue("@Category", rtbDesc.Text.ToString());
-                            cmd.Parameters.AddWithValue("@UnitPrice", rtbDesc.Text.ToString());
-                            cmd.Parameters.AddWithValue("@StockQuantity", rtbDesc.Text.ToString());
-                            cmd.Parameters.AddWithValue("@Barcode", rtbDesc.Text.ToString());
+                            cmd.Parameters.AddWithValue("@ProductName", txtProductName.Text);
+                            cmd.Parameters.AddWithValue("@Description", rtbDesc.Text);
+                            cmd.Parameters.AddWithValue("@Category", cmbCategory.Text);
+                            cmd.Parameters.AddWithValue("@UnitPrice", Decimal.Parse(txtPrice.Text));
+                            cmd.Parameters.AddWithValue("@StockQuantity", int.Parse( txtStockQuantity.Text));
+                            cmd.ExecuteNonQuery();
+                            MessageBox.Show("Save successfully!", "Product", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            LoadData();
                         }
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Products error occured: {+ex.Message}","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        MessageBox.Show("Products error occured: "+ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                     }
-                    
+                    conn.Close();
                 }
-
-
-
-
-                //dgvProducts.Rows.Add(id, name, price, category);
-
-
-
-
                 btnAdd.Text = "ADD";
                 Clear();
                 Reset();
@@ -169,11 +199,12 @@ namespace WinFormsAppPOS
 
         private void frmProduct_Load(object sender, EventArgs e)
         {
-            dgvProducts.Rows.Add(001, "Coke", "Coke", "Drinks", 25, 100);
-            dgvProducts.Rows.Add(002, "Sprite", "Sprite", "Drinks", 25, 50);
-            dgvProducts.Rows.Add(003, "Royal", "Royal", "Drinks", 25, 70);
-            dgvProducts.Rows.Add(004, "RC", "RC", "Drinks", 25, 55);
-            dgvProducts.Rows.Add(005, "C2","C2", "Drinks", 25, 75);
+            //dgvProducts.Rows.Add(001, "Coke", "Coke", "Drinks", 25, 100);
+            //dgvProducts.Rows.Add(002, "Sprite", "Sprite", "Drinks", 25, 50);
+            //dgvProducts.Rows.Add(003, "Royal", "Royal", "Drinks", 25, 70);
+            //dgvProducts.Rows.Add(004, "RC", "RC", "Drinks", 25, 55);
+            //dgvProducts.Rows.Add(005, "C2","C2", "Drinks", 25, 75);
+            LoadData();
         }
 
         private void dgvProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)

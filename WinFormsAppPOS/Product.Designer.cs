@@ -37,13 +37,6 @@
             btnDelete = new Button();
             btnClear = new Button();
             dgvProducts = new DataGridView();
-            id = new DataGridViewTextBoxColumn();
-            ProductName = new DataGridViewTextBoxColumn();
-            description = new DataGridViewTextBoxColumn();
-            category = new DataGridViewTextBoxColumn();
-            unitPrice = new DataGridViewTextBoxColumn();
-            stockQuantity = new DataGridViewTextBoxColumn();
-            barcode = new DataGridViewTextBoxColumn();
             txtProductName = new TextBox();
             txtPrice = new TextBox();
             txtProductId = new TextBox();
@@ -61,44 +54,45 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(90, 22);
+            label1.Location = new Point(103, 29);
             label1.Name = "label1";
-            label1.Size = new Size(68, 15);
+            label1.Size = new Size(84, 20);
             label1.TabIndex = 0;
             label1.Text = "Product id :";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(68, 54);
+            label2.Location = new Point(78, 72);
             label2.Name = "label2";
-            label2.Size = new Size(90, 15);
+            label2.Size = new Size(111, 20);
             label2.TabIndex = 1;
             label2.Text = "Product Name :";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(473, 23);
+            label3.Location = new Point(541, 31);
             label3.Name = "label3";
-            label3.Size = new Size(39, 15);
+            label3.Size = new Size(48, 20);
             label3.TabIndex = 2;
             label3.Text = "Price :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(451, 54);
+            label4.Location = new Point(515, 72);
             label4.Name = "label4";
-            label4.Size = new Size(61, 15);
+            label4.Size = new Size(76, 20);
             label4.TabIndex = 3;
             label4.Text = "Category :";
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(728, 20);
+            btnAdd.Location = new Point(832, 27);
+            btnAdd.Margin = new Padding(3, 4, 3, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(86, 31);
             btnAdd.TabIndex = 4;
             btnAdd.Text = "ADD";
             btnAdd.UseVisualStyleBackColor = true;
@@ -106,9 +100,10 @@
             // 
             // btnEdit
             // 
-            btnEdit.Location = new Point(728, 47);
+            btnEdit.Location = new Point(832, 63);
+            btnEdit.Margin = new Padding(3, 4, 3, 4);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(75, 22);
+            btnEdit.Size = new Size(86, 29);
             btnEdit.TabIndex = 5;
             btnEdit.Text = "EDIT";
             btnEdit.UseVisualStyleBackColor = true;
@@ -116,9 +111,10 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(728, 72);
+            btnDelete.Location = new Point(832, 96);
+            btnDelete.Margin = new Padding(3, 4, 3, 4);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(75, 22);
+            btnDelete.Size = new Size(86, 29);
             btnDelete.TabIndex = 6;
             btnDelete.Text = "DELETE";
             btnDelete.UseVisualStyleBackColor = true;
@@ -126,9 +122,10 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(728, 95);
+            btnClear.Location = new Point(832, 127);
+            btnClear.Margin = new Padding(3, 4, 3, 4);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(75, 25);
+            btnClear.Size = new Size(86, 33);
             btnClear.TabIndex = 7;
             btnClear.Text = "CLEAR";
             btnClear.UseVisualStyleBackColor = true;
@@ -138,146 +135,110 @@
             // 
             dgvProducts.BackgroundColor = SystemColors.Control;
             dgvProducts.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProducts.Columns.AddRange(new DataGridViewColumn[] { id, ProductName, description, category, unitPrice, stockQuantity, barcode });
-            dgvProducts.Location = new Point(40, 168);
+            dgvProducts.Location = new Point(46, 224);
+            dgvProducts.Margin = new Padding(3, 4, 3, 4);
             dgvProducts.Name = "dgvProducts";
             dgvProducts.RowHeadersVisible = false;
             dgvProducts.RowHeadersWidth = 51;
             dgvProducts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvProducts.Size = new Size(763, 217);
+            dgvProducts.Size = new Size(872, 289);
             dgvProducts.TabIndex = 8;
             dgvProducts.CellContentClick += dgvProducts_CellContentClick;
             // 
-            // id
-            // 
-            id.HeaderText = "ID";
-            id.MinimumWidth = 6;
-            id.Name = "id";
-            id.Width = 50;
-            // 
-            // ProductName
-            // 
-            ProductName.HeaderText = "ProductName";
-            ProductName.MinimumWidth = 6;
-            ProductName.Name = "ProductName";
-            ProductName.Width = 155;
-            // 
-            // description
-            // 
-            description.HeaderText = "Description";
-            description.MinimumWidth = 6;
-            description.Name = "description";
-            description.Width = 125;
-            // 
-            // category
-            // 
-            category.HeaderText = "Category";
-            category.MinimumWidth = 6;
-            category.Name = "category";
-            category.Width = 127;
-            // 
-            // unitPrice
-            // 
-            unitPrice.HeaderText = "UnitPrice";
-            unitPrice.Name = "unitPrice";
-            // 
-            // stockQuantity
-            // 
-            stockQuantity.HeaderText = "StockQuantity";
-            stockQuantity.Name = "stockQuantity";
-            // 
-            // barcode
-            // 
-            barcode.HeaderText = "Barcode";
-            barcode.Name = "barcode";
-            // 
             // txtProductName
             // 
-            txtProductName.Location = new Point(168, 51);
+            txtProductName.Location = new Point(192, 68);
+            txtProductName.Margin = new Padding(3, 4, 3, 4);
             txtProductName.Name = "txtProductName";
-            txtProductName.Size = new Size(267, 23);
+            txtProductName.Size = new Size(305, 27);
             txtProductName.TabIndex = 10;
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(522, 20);
+            txtPrice.Location = new Point(597, 27);
+            txtPrice.Margin = new Padding(3, 4, 3, 4);
             txtPrice.Name = "txtPrice";
-            txtPrice.Size = new Size(174, 23);
+            txtPrice.Size = new Size(198, 27);
             txtPrice.TabIndex = 11;
             // 
             // txtProductId
             // 
-            txtProductId.Location = new Point(168, 19);
+            txtProductId.Location = new Point(192, 25);
+            txtProductId.Margin = new Padding(3, 4, 3, 4);
             txtProductId.Name = "txtProductId";
-            txtProductId.Size = new Size(267, 23);
+            txtProductId.Size = new Size(305, 27);
             txtProductId.TabIndex = 9;
             // 
             // cmbCategory
             // 
             cmbCategory.FormattingEnabled = true;
             cmbCategory.Items.AddRange(new object[] { "-Select Category-", "Drinks", "Bread & Pastry", "Snacks", "Vegetables" });
-            cmbCategory.Location = new Point(522, 51);
+            cmbCategory.Location = new Point(597, 68);
+            cmbCategory.Margin = new Padding(3, 4, 3, 4);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(174, 23);
+            cmbCategory.Size = new Size(198, 28);
             cmbCategory.TabIndex = 12;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(40, 95);
+            label5.Location = new Point(46, 127);
             label5.Name = "label5";
-            label5.Size = new Size(118, 15);
+            label5.Size = new Size(147, 20);
             label5.TabIndex = 13;
             label5.Text = "Product Description :";
             // 
             // rtbDesc
             // 
-            rtbDesc.Location = new Point(168, 83);
+            rtbDesc.Location = new Point(192, 111);
+            rtbDesc.Margin = new Padding(3, 4, 3, 4);
             rtbDesc.Name = "rtbDesc";
-            rtbDesc.Size = new Size(267, 37);
+            rtbDesc.Size = new Size(305, 48);
             rtbDesc.TabIndex = 14;
             rtbDesc.Text = "";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(456, 105);
+            label6.Location = new Point(521, 140);
             label6.Name = "label6";
-            label6.Size = new Size(56, 15);
+            label6.Size = new Size(71, 20);
             label6.TabIndex = 15;
             label6.Text = "Barcode :";
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.WhiteSmoke;
-            pictureBox1.Location = new Point(522, 103);
+            pictureBox1.Location = new Point(597, 137);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 41);
+            pictureBox1.Size = new Size(199, 55);
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(67, 134);
+            label7.Location = new Point(77, 179);
             label7.Name = "label7";
-            label7.Size = new Size(91, 15);
+            label7.Size = new Size(112, 20);
             label7.TabIndex = 17;
             label7.Text = "Stock Quantity :";
             // 
             // txtStockQuantity
             // 
-            txtStockQuantity.Location = new Point(168, 131);
+            txtStockQuantity.Location = new Point(192, 175);
+            txtStockQuantity.Margin = new Padding(3, 4, 3, 4);
             txtStockQuantity.Name = "txtStockQuantity";
-            txtStockQuantity.Size = new Size(101, 23);
+            txtStockQuantity.Size = new Size(115, 27);
             txtStockQuantity.TabIndex = 18;
             // 
             // frmProduct
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightSeaGreen;
-            ClientSize = new Size(845, 396);
+            ClientSize = new Size(966, 528);
             Controls.Add(txtStockQuantity);
             Controls.Add(label7);
             Controls.Add(pictureBox1);
@@ -297,6 +258,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmProduct";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Product Maintenance";
@@ -326,13 +288,6 @@
         private RichTextBox rtbDesc;
         private Label label6;
         private PictureBox pictureBox1;
-        private DataGridViewTextBoxColumn id;
-        private DataGridViewTextBoxColumn ProductName;
-        private DataGridViewTextBoxColumn description;
-        private DataGridViewTextBoxColumn category;
-        private DataGridViewTextBoxColumn unitPrice;
-        private DataGridViewTextBoxColumn stockQuantity;
-        private DataGridViewTextBoxColumn barcode;
         private Label label7;
         private TextBox txtStockQuantity;
     }

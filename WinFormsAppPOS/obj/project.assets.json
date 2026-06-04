@@ -1,7 +1,7 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
-    "net10.0-windows": {
+    "net10.0-windows7.0": {
       "BarCode/2026.6.2": {
         "type": "package",
         "dependencies": {
@@ -1732,7 +1732,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net10.0-windows": [
+    "net10.0-windows7.0": [
       "BarCode >= 2026.6.2",
       "Microsoft.NETCore.Platforms >= 7.0.4",
       "MySql.Data >= 9.7.0",
@@ -1740,23 +1740,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
+    "C:\\Users\\TCLASS_Rod\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
+      "projectUniqueName": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
       "projectName": "WinFormsAppPOS",
-      "projectPath": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "E:\\POS\\WinFormsAppPOS\\WinFormsAppPOS\\obj\\",
+      "projectPath": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\WinFormsAppPOS.csproj",
+      "packagesPath": "C:\\Users\\TCLASS_Rod\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TCLASS_Rod\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1768,7 +1768,7 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net10.0-windows": {
+        "net10.0-windows7.0": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
           "projectReferences": {}
@@ -1784,10 +1784,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
-      "net10.0-windows": {
+      "net10.0-windows7.0": {
         "framework": "net10.0-windows7.0",
         "targetAlias": "net10.0-windows",
         "dependencies": {
@@ -1827,7 +1827,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
