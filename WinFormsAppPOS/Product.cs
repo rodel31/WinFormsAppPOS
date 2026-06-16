@@ -9,6 +9,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsAppPOS
 {
@@ -19,6 +20,7 @@ namespace WinFormsAppPOS
         {
             InitializeComponent();
             Reset();
+            LoadCategory();
         }
 
         string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=;";
@@ -31,7 +33,7 @@ namespace WinFormsAppPOS
             txtStockQuantity.Enabled = false;
             rtbDesc.Enabled = false;
             cmbCategory.Enabled = false;
-            cmbCategory.SelectedIndex = 0;
+            cmbCategory.SelectedIndex = -1;
         }
         public void Clear()
         {
@@ -40,7 +42,7 @@ namespace WinFormsAppPOS
             txtPrice.Text = string.Empty;
             txtStockQuantity.Text = string.Empty;
             rtbDesc.Text = string.Empty;
-            cmbCategory.SelectedIndex = 0;
+            cmbCategory.SelectedIndex = -1;
         }
         public void InputEnable()
         {
@@ -50,7 +52,7 @@ namespace WinFormsAppPOS
             txtStockQuantity.Enabled = true;
             rtbDesc.Enabled = true;
             cmbCategory.Enabled = true;
-            cmbCategory.SelectedIndex = 0;
+            cmbCategory.SelectedIndex = -1;
         }
 
         public int GetTableRowCount()
@@ -107,6 +109,41 @@ namespace WinFormsAppPOS
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+        private void LoadCategory()
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+
+                    string query =
+                        "SELECT CategoryID, CategoryName FROM categories ORDER BY CategoryName";
+
+                    
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, conn))
+                    {
+                        DataTable dt = new DataTable();
+                        adapter.Fill(dt);
+                        MessageBox.Show($"Rows Loaded: {dt.Rows.Count}");
+
+                        cmbCategory.DataSource = dt;
+                        cmbCategory.DisplayMember = "CategoryName";
+                        cmbCategory.ValueMember = "CategoryID";
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            cmbCategory.SelectedIndex = -1;
+                        } 
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
         private void btnAdd_Click(object sender, EventArgs e)
