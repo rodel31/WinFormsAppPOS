@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WinFormsAppPOS
 {
-    public partial class Category : Form
+    public partial class frmCategory : Form
     {
-        public Category()
+        public frmCategory()
         {
             InitializeComponent();
         }

@@ -54,7 +54,7 @@ namespace WinFormsAppPOS
                 }
                 else
                 {
-                    string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=;";
+                    string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=P@ssw0rd;";
                     using (MySqlConnection conn = new MySqlConnection(connectionString))
                     {
                         try

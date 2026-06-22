@@ -24,5 +24,21 @@ namespace WinFormsAppPOS
             frmProduct pm = new frmProduct();
             pm.Show();
         }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            frmCategory _category = new frmCategory();
+            _category.Show();
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

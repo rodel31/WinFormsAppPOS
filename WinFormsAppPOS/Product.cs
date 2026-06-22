@@ -23,7 +23,7 @@ namespace WinFormsAppPOS
             LoadCategory();
         }
 
-        string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=;";
+        string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=P@ssw0rd;";
         int idNum = 0;
         public void Reset()
         {
@@ -200,7 +200,7 @@ namespace WinFormsAppPOS
                 {
                     btnEdit.Text = "UPDATE";
                     InputEnable();
-                    txtProductId.Text = dgvProducts.SelectedRows[0].Cells["ID"].Value.ToString();
+                    txtProductId.Text = dgvProducts.SelectedRows[0].Cells["ProductID"].Value.ToString();
                     txtProductName.Text = dgvProducts.SelectedRows[0].Cells["ProductName"].Value.ToString();
                     rtbDesc.Text = dgvProducts.SelectedRows[0].Cells["Description"].Value.ToString();
                     cmbCategory.Text = dgvProducts.SelectedRows[0].Cells["Category"].Value.ToString();
@@ -214,23 +214,56 @@ namespace WinFormsAppPOS
             }
             else if (btnEdit.Text == "UPDATE")
             {
-                for (int i = 0; i < dgvProducts.Rows.Count - 1; i++)
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
-                    if (dgvProducts.Rows[i].Cells["ID"].Value.ToString() == txtProductId.Text)
+                    string sqlQuery = "UPDATE products SET ProductName=@ProductName,Description=@Description,Category=@Category,UnitPrice=@UnitPrice,StockQuantity=@StockQuantity" +
+                        " WHERE ProductID = @ProductID";
+                    try
                     {
-                        dgvProducts.Rows[i].Cells["ID"].Value = txtProductId.Text;
-                        dgvProducts.Rows[i].Cells["ProductName"].Value = txtProductName.Text;
-                        dgvProducts.Rows[i].Cells["Description"].Value = txtPrice.Text;
-                        dgvProducts.Rows[i].Cells["Category"].Value = cmbCategory.Text;
-                        dgvProducts.Rows[i].Cells["UnitPrice"].Value = txtPrice.Text;
-                        dgvProducts.Rows[i].Cells["StockQuantity"].Value = txtStockQuantity.Text;
+                        conn.Open();
+                        using (MySqlCommand cmd = new MySqlCommand(sqlQuery, conn))
+                        {
 
-                        MessageBox.Show("SUCCESSFULLY UPDATED");
+                            cmd.Parameters.AddWithValue("@ProductName", txtProductName.Text);
+                            cmd.Parameters.AddWithValue("@Description", rtbDesc.Text);
+                            cmd.Parameters.AddWithValue("@Category", cmbCategory.Text);
+                            cmd.Parameters.AddWithValue("@UnitPrice", Decimal.Parse(txtPrice.Text));
+                            cmd.Parameters.AddWithValue("@StockQuantity", int.Parse(txtStockQuantity.Text));
+                            cmd.Parameters.AddWithValue("@ProductID", int.Parse(txtProductId.Text));
+
+                            cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("Data Update Succesfully");
+                        }
+                        LoadData();
+                        conn.Dispose();
+                    } 
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
                     }
                 }
-                btnEdit.Text = "EDIT";
-                Clear();
-                Reset();
+
+
+
+                    btnEdit.Text = "EDIT";
+                    Clear();
+                    Reset();
+                //for (int i = 0; i < dgvProducts.Rows.Count - 1; i++)
+                //{
+                //    if (dgvProducts.Rows[i].Cells["ProductID"].Value.ToString() == txtProductId.Text)
+                //    {
+                //        dgvProducts.Rows[i].Cells["ProductID"].Value = txtProductId.Text;
+                //        dgvProducts.Rows[i].Cells["ProductName"].Value = txtProductName.Text;
+                //        dgvProducts.Rows[i].Cells["Description"].Value = rtbDesc.Text;
+                //        dgvProducts.Rows[i].Cells["Category"].Value = cmbCategory.Text;
+                //        dgvProducts.Rows[i].Cells["UnitPrice"].Value = txtPrice.Text;
+                //        dgvProducts.Rows[i].Cells["StockQuantity"].Value = txtStockQuantity.Text;
+
+                //        MessageBox.Show("SUCCESSFULLY UPDATED");
+                //    }
+                //}
+
             }
         }
 
