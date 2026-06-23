@@ -359,3 +359,4 @@ C:\Users\WebUser\Desktop\Repo\Projects\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\n
 C:\Users\WebUser\Desktop\Repo\Projects\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.genruntimeconfig.cache
 C:\Users\WebUser\Desktop\Repo\Projects\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\ref\WinFormsAppPOS.dll
 C:\Users\TCLASS_Rod\Desktop\POS REPO\POS_Repo\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmCategory.resources
+C:\Users\TCLASS_Rod\Desktop\POS REPO\POS_Repo\WinFormsAppPOS\WinFormsAppPOS\obj\Debug\net10.0-windows\WinFormsAppPOS.frmSales.resources
