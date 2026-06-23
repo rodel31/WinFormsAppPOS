@@ -2,10 +2,12 @@ namespace WinFormsAppPOS
 {
     public partial class frmMain : Form
     {
+        string activeUser;
         public frmMain(String _user)
         {
             InitializeComponent();
             lblUser.Text = _user;
+            activeUser = _user;
         }
 
         private void btnMaintenance_Click(object sender, EventArgs e)
@@ -40,6 +42,12 @@ namespace WinFormsAppPOS
         private void btnUser_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+            frmSales sales = new frmSales(activeUser);
+            sales.Show();
         }
     }
 }

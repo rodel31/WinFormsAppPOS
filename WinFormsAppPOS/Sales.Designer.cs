@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgvSalesReceipt = new DataGridView();
+            ProductID = new DataGridViewTextBoxColumn();
+            UnitPrice = new DataGridViewTextBoxColumn();
+            Quantity = new DataGridViewTextBoxColumn();
+            SubTotal = new DataGridViewTextBoxColumn();
             dgvSearchProduct = new DataGridView();
             txtSearch = new TextBox();
             label1 = new Label();
@@ -65,12 +70,52 @@
             // dgvSalesReceipt
             // 
             dgvSalesReceipt.BackgroundColor = SystemColors.Control;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvSalesReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvSalesReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSalesReceipt.Columns.AddRange(new DataGridViewColumn[] { ProductID, UnitPrice, Quantity, SubTotal });
             dgvSalesReceipt.Location = new Point(914, 55);
+            dgvSalesReceipt.MultiSelect = false;
             dgvSalesReceipt.Name = "dgvSalesReceipt";
+            dgvSalesReceipt.RowHeadersVisible = false;
             dgvSalesReceipt.RowHeadersWidth = 51;
-            dgvSalesReceipt.Size = new Size(407, 576);
+            dgvSalesReceipt.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSalesReceipt.Size = new Size(509, 576);
             dgvSalesReceipt.TabIndex = 0;
+            // 
+            // ProductID
+            // 
+            ProductID.HeaderText = "ProductID";
+            ProductID.MinimumWidth = 6;
+            ProductID.Name = "ProductID";
+            ProductID.Width = 125;
+            // 
+            // UnitPrice
+            // 
+            UnitPrice.HeaderText = "Unit Price";
+            UnitPrice.MinimumWidth = 6;
+            UnitPrice.Name = "UnitPrice";
+            UnitPrice.Width = 125;
+            // 
+            // Quantity
+            // 
+            Quantity.HeaderText = "Qty";
+            Quantity.MinimumWidth = 6;
+            Quantity.Name = "Quantity";
+            Quantity.Width = 125;
+            // 
+            // SubTotal
+            // 
+            SubTotal.HeaderText = "Sub-Total";
+            SubTotal.MinimumWidth = 6;
+            SubTotal.Name = "SubTotal";
+            SubTotal.Width = 125;
             // 
             // dgvSearchProduct
             // 
@@ -207,7 +252,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Yellow;
-            label7.Location = new Point(914, 646);
+            label7.Location = new Point(1054, 666);
             label7.Name = "label7";
             label7.Size = new Size(226, 41);
             label7.TabIndex = 15;
@@ -218,7 +263,7 @@
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotal.ForeColor = Color.White;
-            lblTotal.Location = new Point(1161, 656);
+            lblTotal.Location = new Point(1309, 676);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(65, 28);
             lblTotal.TabIndex = 16;
@@ -343,7 +388,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
-            ClientSize = new Size(1333, 724);
+            ClientSize = new Size(1435, 748);
             Controls.Add(btnProcess);
             Controls.Add(btnVoid);
             Controls.Add(btnAddOrder);
@@ -413,5 +458,9 @@
         private Button btnAddOrder;
         private Button btnVoid;
         private Button btnProcess;
+        private DataGridViewTextBoxColumn ProductID;
+        private DataGridViewTextBoxColumn UnitPrice;
+        private DataGridViewTextBoxColumn Quantity;
+        private DataGridViewTextBoxColumn SubTotal;
     }
 }

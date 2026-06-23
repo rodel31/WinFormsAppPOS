@@ -214,6 +214,7 @@
             btnSales.TabIndex = 0;
             btnSales.Text = "SALES";
             btnSales.UseVisualStyleBackColor = false;
+            btnSales.Click += btnSales_Click;
             // 
             // label1
             // 

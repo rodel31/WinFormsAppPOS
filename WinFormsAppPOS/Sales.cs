@@ -10,9 +10,11 @@ namespace WinFormsAppPOS
 {
     public partial class frmSales : Form
     {
-        public frmSales()
+        public frmSales(string _activeUser)
         {
             InitializeComponent();
+            lblActive.Text = _activeUser;
         }
+
     }
 }
