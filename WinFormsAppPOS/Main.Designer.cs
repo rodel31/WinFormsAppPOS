@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             pnlMenu = new Panel();
+            lblUser = new Label();
             btnSettings = new Button();
             btnReports = new Button();
             btnTransaction = new Button();
@@ -52,6 +53,7 @@
             // pnlMenu
             // 
             pnlMenu.BackColor = Color.FromArgb(0, 192, 192);
+            pnlMenu.Controls.Add(lblUser);
             pnlMenu.Controls.Add(btnSettings);
             pnlMenu.Controls.Add(btnReports);
             pnlMenu.Controls.Add(btnTransaction);
@@ -62,9 +64,22 @@
             pnlMenu.Size = new Size(138, 487);
             pnlMenu.TabIndex = 0;
             // 
+            // lblUser
+            // 
+            lblUser.AutoSize = true;
+            lblUser.BackColor = Color.Transparent;
+            lblUser.BorderStyle = BorderStyle.FixedSingle;
+            lblUser.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUser.ForeColor = SystemColors.Control;
+            lblUser.Location = new Point(19, 433);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(92, 25);
+            lblUser.TabIndex = 6;
+            lblUser.Text = "userName";
+            // 
             // btnSettings
             // 
-            btnSettings.Location = new Point(7, 399);
+            btnSettings.Location = new Point(7, 197);
             btnSettings.Margin = new Padding(3, 4, 3, 4);
             btnSettings.Name = "btnSettings";
             btnSettings.Size = new Size(113, 48);
@@ -206,7 +221,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Perpetua", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(261, 19);
+            label1.Location = new Point(201, 20);
             label1.Name = "label1";
             label1.Size = new Size(498, 39);
             label1.TabIndex = 5;
@@ -234,6 +249,7 @@
             Text = "POS Main";
             TransparencyKey = Color.Gray;
             pnlMenu.ResumeLayout(false);
+            pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnlMaintenance.ResumeLayout(false);
             pnlSales.ResumeLayout(false);
@@ -257,5 +273,6 @@
         private Panel pnlSales;
         private Button btnSales;
         private Label label1;
+        private Label lblUser;
     }
 }

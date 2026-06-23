@@ -2,9 +2,10 @@ namespace WinFormsAppPOS
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        public frmMain(String _user)
         {
             InitializeComponent();
+            lblUser.Text = _user;
         }
 
         private void btnMaintenance_Click(object sender, EventArgs e)

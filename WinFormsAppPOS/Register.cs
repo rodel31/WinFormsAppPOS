@@ -64,11 +64,11 @@ namespace WinFormsAppPOS
                             "VALUES (@Username, @Password, @FullName, @Role)";
 
                             using (MySqlCommand cmd = new MySqlCommand(sqlQuery, conn))
-                            {
+                            {     
                                 cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                                 cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                                 cmd.Parameters.AddWithValue("@FullName", txtFullname.Text);
-                                cmd.Parameters.AddWithValue("@Role", cmbRole.Text);
+                                cmd.Parameters.AddWithValue("@Role", cmbRole.Text);             
                                 cmd.ExecuteNonQuery();
 
                                 MessageBox.Show("User registered successfully!","Register",MessageBoxButtons.OK,MessageBoxIcon.Information);

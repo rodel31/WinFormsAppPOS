@@ -43,10 +43,10 @@ namespace WinFormsAppPOS
                             if (reader.Read())
                             {
                                 MessageBox.Show("Login Successful!");
-
-                                frmMain frm = new frmMain();
+                                Util u = new Util();
+                                u.setUserName(txtUsername.Text);
+                                frmMain frm = new frmMain(u.getUserName());
                                 frm.Show();
-
                             }
                             else
                             {
