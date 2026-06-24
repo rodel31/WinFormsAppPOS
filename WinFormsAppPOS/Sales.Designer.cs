@@ -121,15 +121,18 @@
             // 
             dgvSearchProduct.BackgroundColor = SystemColors.ActiveBorder;
             dgvSearchProduct.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSearchProduct.Location = new Point(466, 202);
+            dgvSearchProduct.Location = new Point(405, 202);
             dgvSearchProduct.Name = "dgvSearchProduct";
-            dgvSearchProduct.RowHeadersWidth = 51;
-            dgvSearchProduct.Size = new Size(442, 429);
+            dgvSearchProduct.RowHeadersVisible = false;
+            dgvSearchProduct.RowHeadersWidth = 40;
+            dgvSearchProduct.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSearchProduct.Size = new Size(503, 429);
             dgvSearchProduct.TabIndex = 1;
+            dgvSearchProduct.CellContentClick += dgvSearchProduct_CellContentClick;
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(665, 169);
+            txtSearch.Location = new Point(618, 169);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(243, 27);
             txtSearch.TabIndex = 2;
@@ -138,7 +141,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(475, 172);
+            label1.Location = new Point(437, 172);
             label1.Name = "label1";
             label1.Size = new Size(175, 20);
             label1.TabIndex = 3;
@@ -148,7 +151,7 @@
             // 
             txtCustomer.Location = new Point(159, 23);
             txtCustomer.Name = "txtCustomer";
-            txtCustomer.Size = new Size(301, 27);
+            txtCustomer.Size = new Size(540, 27);
             txtCustomer.TabIndex = 4;
             // 
             // label2
@@ -163,7 +166,7 @@
             // 
             // btnNewCustomer
             // 
-            btnNewCustomer.Location = new Point(475, 23);
+            btnNewCustomer.Location = new Point(715, 23);
             btnNewCustomer.Name = "btnNewCustomer";
             btnNewCustomer.Size = new Size(120, 29);
             btnNewCustomer.TabIndex = 6;
@@ -182,9 +185,9 @@
             // 
             // txtSearchCustomer
             // 
-            txtSearchCustomer.Location = new Point(215, 169);
+            txtSearchCustomer.Location = new Point(209, 169);
             txtSearchCustomer.Name = "txtSearchCustomer";
-            txtSearchCustomer.Size = new Size(245, 27);
+            txtSearchCustomer.Size = new Size(190, 27);
             txtSearchCustomer.TabIndex = 8;
             // 
             // dgvCustomerInfo
@@ -193,9 +196,12 @@
             dgvCustomerInfo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCustomerInfo.Location = new Point(18, 202);
             dgvCustomerInfo.Name = "dgvCustomerInfo";
+            dgvCustomerInfo.RowHeadersVisible = false;
             dgvCustomerInfo.RowHeadersWidth = 51;
-            dgvCustomerInfo.Size = new Size(442, 429);
+            dgvCustomerInfo.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCustomerInfo.Size = new Size(381, 429);
             dgvCustomerInfo.TabIndex = 7;
+            dgvCustomerInfo.CellContentClick += dgvCustomerInfo_CellContentClick;
             // 
             // label4
             // 
@@ -211,7 +217,7 @@
             // 
             txtProductName.Location = new Point(159, 65);
             txtProductName.Name = "txtProductName";
-            txtProductName.Size = new Size(301, 27);
+            txtProductName.Size = new Size(540, 27);
             txtProductName.TabIndex = 11;
             // 
             // label5
@@ -317,7 +323,7 @@
             // 
             // txtPrice
             // 
-            txtPrice.Location = new Point(159, 105);
+            txtPrice.Location = new Point(381, 100);
             txtPrice.Name = "txtPrice";
             txtPrice.Size = new Size(123, 27);
             txtPrice.TabIndex = 23;
@@ -326,7 +332,7 @@
             // 
             label8.AutoSize = true;
             label8.ForeColor = SystemColors.Control;
-            label8.Location = new Point(93, 105);
+            label8.Location = new Point(315, 100);
             label8.Name = "label8";
             label8.Size = new Size(44, 20);
             label8.TabIndex = 22;
@@ -334,7 +340,7 @@
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(361, 105);
+            txtQuantity.Location = new Point(601, 100);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(99, 27);
             txtQuantity.TabIndex = 25;
@@ -343,7 +349,7 @@
             // 
             label11.AutoSize = true;
             label11.ForeColor = SystemColors.Control;
-            label11.Location = new Point(295, 105);
+            label11.Location = new Point(535, 100);
             label11.Name = "label11";
             label11.Size = new Size(68, 20);
             label11.TabIndex = 24;
@@ -351,7 +357,7 @@
             // 
             // btnAddOrder
             // 
-            btnAddOrder.Location = new Point(475, 101);
+            btnAddOrder.Location = new Point(715, 96);
             btnAddOrder.Name = "btnAddOrder";
             btnAddOrder.Size = new Size(120, 29);
             btnAddOrder.TabIndex = 26;
@@ -363,7 +369,7 @@
             btnVoid.BackColor = Color.FromArgb(192, 0, 0);
             btnVoid.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnVoid.ForeColor = Color.FromArgb(0, 192, 192);
-            btnVoid.Location = new Point(788, 56);
+            btnVoid.Location = new Point(914, 662);
             btnVoid.Name = "btnVoid";
             btnVoid.Size = new Size(120, 53);
             btnVoid.TabIndex = 27;
@@ -376,7 +382,7 @@
             btnProcess.Enabled = false;
             btnProcess.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProcess.ForeColor = Color.Red;
-            btnProcess.Location = new Point(755, 663);
+            btnProcess.Location = new Point(745, 663);
             btnProcess.Name = "btnProcess";
             btnProcess.Size = new Size(153, 53);
             btnProcess.TabIndex = 28;
