@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             dgvSalesReceipt = new DataGridView();
             ProductID = new DataGridViewTextBoxColumn();
             UnitPrice = new DataGridViewTextBoxColumn();
             Quantity = new DataGridViewTextBoxColumn();
             SubTotal = new DataGridViewTextBoxColumn();
             dgvSearchProduct = new DataGridView();
-            txtSearch = new TextBox();
+            txtSearchProduct = new TextBox();
             label1 = new Label();
             txtCustomer = new TextBox();
             label2 = new Label();
@@ -70,14 +70,14 @@
             // dgvSalesReceipt
             // 
             dgvSalesReceipt.BackgroundColor = SystemColors.Control;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvSalesReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvSalesReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvSalesReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSalesReceipt.Columns.AddRange(new DataGridViewColumn[] { ProductID, UnitPrice, Quantity, SubTotal });
             dgvSalesReceipt.Location = new Point(914, 55);
@@ -130,12 +130,12 @@
             dgvSearchProduct.TabIndex = 1;
             dgvSearchProduct.CellContentClick += dgvSearchProduct_CellContentClick;
             // 
-            // txtSearch
+            // txtSearchProduct
             // 
-            txtSearch.Location = new Point(618, 169);
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(243, 27);
-            txtSearch.TabIndex = 2;
+            txtSearchProduct.Location = new Point(618, 169);
+            txtSearchProduct.Name = "txtSearchProduct";
+            txtSearchProduct.Size = new Size(243, 27);
+            txtSearchProduct.TabIndex = 2;
             // 
             // label1
             // 
@@ -363,6 +363,7 @@
             btnAddOrder.TabIndex = 26;
             btnAddOrder.Text = "ADD ORDER";
             btnAddOrder.UseVisualStyleBackColor = true;
+            btnAddOrder.Click += btnAddOrder_Click;
             // 
             // btnVoid
             // 
@@ -421,7 +422,7 @@
             Controls.Add(label2);
             Controls.Add(txtCustomer);
             Controls.Add(label1);
-            Controls.Add(txtSearch);
+            Controls.Add(txtSearchProduct);
             Controls.Add(dgvSearchProduct);
             Controls.Add(dgvSalesReceipt);
             Name = "frmSales";
@@ -437,7 +438,7 @@
 
         private DataGridView dgvSalesReceipt;
         private DataGridView dgvSearchProduct;
-        private TextBox txtSearch;
+        private TextBox txtSearchProduct;
         private Label label1;
         private TextBox txtCustomer;
         private Label label2;

@@ -19,7 +19,8 @@ namespace WinFormsAppPOS
             loadCustomers();
         }
         public string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=P@ssw0rd";
-        public int prodID, custID;
+        public int prodID, custID; 
+            public decimal _subTotal;
 
         public void loadProducts()
         {
@@ -69,7 +70,17 @@ namespace WinFormsAppPOS
 
             }
         }
+        public void ResetOrderFields()
+        {
+            loadProducts();
+            loadCustomers();
+            txtProductName.Text = string.Empty;
+            txtPrice.Text = string.Empty;
+            txtQuantity.Text = string.Empty;
+            txtSearchCustomer.Text = string.Empty;
+            txtSearchProduct.Text = string.Empty;
 
+        }
         private void dgvSearchProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvSearchProduct.SelectedRows.Count > 0)
@@ -86,8 +97,16 @@ namespace WinFormsAppPOS
             {
                 custID = int.Parse(dgvCustomerInfo.SelectedRows[0].Cells["CustomerID"].Value.ToString());
                 txtCustomer.Text = dgvCustomerInfo.SelectedRows[0].Cells["CustomerName"].Value.ToString();
-                
             }
+        }
+
+        private void btnAddOrder_Click(object sender, EventArgs e)
+        {
+            decimal price = decimal.Parse(txtPrice.Text);
+            int qty = int.Parse(txtQuantity.Text);
+            _subTotal =  price * qty;
+            dgvSalesReceipt.Rows.Add(prodID, txtPrice.Text, txtQuantity.Text, _subTotal.ToString());
+            ResetOrderFields();
         }
     }
 }

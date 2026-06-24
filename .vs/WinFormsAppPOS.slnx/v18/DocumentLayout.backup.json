@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\pos_repo\\winformsapppos\\winformsapppos\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\winformsapppos\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,16 +15,16 @@
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\pos_repo\\winformsapppos\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\pos_repo\\winformsapppos\\winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\winformsapppos\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\pos_repo\\winformsapppos\\winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|solutionrelative:winformsapppos\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAD25E16-FDA7-275D-4C33-82355D0DE6D0}|WinFormsAppPOS\\WinFormsAppPOS.csproj|c:\\users\\tclass_rod\\desktop\\pos repo\\pos_repo\\winformsapppos\\winformsapppos\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -60,14 +60,14 @@
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
               "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
               "RelativeToolTip": "WinFormsAppPOS\\Product.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAiwNAAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAIwA8BAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-24T02:14:10.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Product.cs [Design]",
               "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Product.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Product.cs",
@@ -85,7 +85,7 @@
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Sales.cs",
               "ToolTip": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Sales.cs",
               "RelativeToolTip": "WinFormsAppPOS\\Sales.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwEwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-23T09:19:53.034Z",
               "EditorCaption": ""
@@ -125,12 +125,11 @@
               "RelativeToolTip": "WinFormsAppPOS\\Util.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-23T07:01:55.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-23T07:01:55.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Main.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Main.cs",
@@ -142,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\TCLASS_Rod\\Desktop\\POS REPO\\POS_Repo\\WinFormsAppPOS\\WinFormsAppPOS\\Login.cs",
               "RelativeDocumentMoniker": "WinFormsAppPOS\\Login.cs",
