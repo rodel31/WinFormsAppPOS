@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Common;
 
 namespace WinFormsAppPOS
 {
@@ -19,8 +20,8 @@ namespace WinFormsAppPOS
             loadCustomers();
         }
         public string connectionString = "Server=localhost;Database=pos_db;Uid=root;Pwd=P@ssw0rd";
-        public int prodID, custID; 
-            public decimal _subTotal;
+        public int prodID, custID;
+        public decimal _subTotal, total;
 
         public void loadProducts()
         {
@@ -81,6 +82,16 @@ namespace WinFormsAppPOS
             txtSearchProduct.Text = string.Empty;
 
         }
+        public void getTotal()
+        {
+            total = 0;
+            for (int i = 0; i < dgvSalesReceipt.Rows.Count - 1; i++)
+            {
+                decimal _subT = decimal.Parse(dgvSalesReceipt.Rows[i].Cells["SubTotal"].Value.ToString());
+                total = total + _subT;
+                lblTotal.Text = total.ToString();
+            }
+        }
         private void dgvSearchProduct_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dgvSearchProduct.SelectedRows.Count > 0)
@@ -104,9 +115,28 @@ namespace WinFormsAppPOS
         {
             decimal price = decimal.Parse(txtPrice.Text);
             int qty = int.Parse(txtQuantity.Text);
-            _subTotal =  price * qty;
+            _subTotal = price * qty;
             dgvSalesReceipt.Rows.Add(prodID, txtPrice.Text, txtQuantity.Text, _subTotal.ToString());
             ResetOrderFields();
+            getTotal();
+        }
+
+        private void btnProcess_Click(object sender, EventArgs e)
+        {
+            if (txtCash.Text != string.Empty)
+            {
+                decimal cashR = decimal.Parse(txtCash.Text);
+                decimal _result = cashR - total;
+                if (cashR > total)
+                {
+                    txtChange.Text = _result.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Insufficient cash payment","Information",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
+            }
+            
         }
     }
 }

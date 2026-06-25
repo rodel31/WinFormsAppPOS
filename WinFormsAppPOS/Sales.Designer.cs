@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgvSalesReceipt = new DataGridView();
             ProductID = new DataGridViewTextBoxColumn();
             UnitPrice = new DataGridViewTextBoxColumn();
@@ -70,14 +70,14 @@
             // dgvSalesReceipt
             // 
             dgvSalesReceipt.BackgroundColor = SystemColors.Control;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgvSalesReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvSalesReceipt.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dgvSalesReceipt.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvSalesReceipt.Columns.AddRange(new DataGridViewColumn[] { ProductID, UnitPrice, Quantity, SubTotal });
             dgvSalesReceipt.Location = new Point(914, 55);
@@ -380,7 +380,6 @@
             // btnProcess
             // 
             btnProcess.BackColor = Color.White;
-            btnProcess.Enabled = false;
             btnProcess.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProcess.ForeColor = Color.Red;
             btnProcess.Location = new Point(745, 663);
@@ -389,6 +388,7 @@
             btnProcess.TabIndex = 28;
             btnProcess.Text = "PROCESS";
             btnProcess.UseVisualStyleBackColor = false;
+            btnProcess.Click += btnProcess_Click;
             // 
             // frmSales
             // 
